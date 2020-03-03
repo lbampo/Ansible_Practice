@@ -1,0 +1,20 @@
+## Ansible Playbook ##
+
+- hosts: localhost
+  vars_prompt:
+    - name: gitDestination
+      prompt: "Where is your .gitconfig file stored?"
+      private: no
+
+  tasks:
+  - copy: 
+      src: "master.gitconfig" 
+      dest: '~/{{ gitDestination }}/.gitconfig'
+
+  - homebrew:
+      name: "bat"
+      state: "latest"
+
+  
+
+
