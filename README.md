@@ -2,6 +2,8 @@ Ansible Practice
 
 Ansible is a tool used to create the same output in all endpoints regardless of inputs and reruns (Idempotent)
 
+![ansible_diagram](Screenshot 2020-03-03 at 15.38.36.png)
+
 --------------------------------
 Ad-Hoc
 
